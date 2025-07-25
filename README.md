@@ -1,17 +1,17 @@
 # Project: Personal Firewall using Python
 
 
-## 🧾 Introduction
+## Introduction
 In the modern digital landscape, the rise in cyber threats makes personal security tools increasingly essential. This project aims to develop a lightweight personal firewall using Python. It is capable of sniffing, filtering, and logging network traffic based on customizable rules. This firewall is ideal for learning network security concepts and creating a foundational security tool.
 
 ---
 
-## 📌 Abstract
+## Abstract
 This project demonstrates the creation of a personal firewall that captures and filters network traffic in real-time using Python and the Scapy library. The firewall applies user-defined rules to allow or block packets based on IP addresses, ports, and protocols. Logged data provides visibility into allowed and blocked communications, while optional integrations with Linux iptables and a Tkinter GUI add enforcement and interactivity.
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 - Python 3
 - Scapy (`pip install scapy`)
 - Linux iptables (for enforcing rules)
@@ -20,16 +20,16 @@ This project demonstrates the creation of a personal firewall that captures and 
 
 ---
 
-## ⚙️ Features
-- ✅ Real-time packet sniffing using Scapy
-- ✅ Rule-based filtering for IP, port, protocol
-- ✅ Activity logging with timestamps
-- ✅ Optional iptables integration for system-level enforcement
-- ✅ Optional Tkinter-based GUI for live monitoring
+## Features
+-  Real-time packet sniffing using Scapy
+-  Rule-based filtering for IP, port, protocol
+-  Activity logging with timestamps
+-  Optional iptables integration for system-level enforcement
+-  Optional Tkinter-based GUI for live monitoring
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### 1. Install Requirements
 ```bash
@@ -95,7 +95,7 @@ allowed_protocols = ['TCP', 'UDP']
 
 ---
 
-## 🧪 Output
+##  Output
 - All blocked and allowed packets are logged in `firewall_log.txt` with timestamps and reasons.
 - Example:
   ```
@@ -104,7 +104,7 @@ allowed_protocols = ['TCP', 'UDP']
 
 ---
 
-## 🖥 Optional: GUI Monitoring
+##  Optional: GUI Monitoring
 You can build a GUI using Tkinter to display packets in real-time. It will allow you to visualize traffic and alerts as they happen.
 ```bash
 import tkinter as tk
@@ -129,7 +129,7 @@ window.mainloop()
 
 ---
 
-## 🔐 Optional: Enforcing with iptables
+##  Optional: Enforcing with iptables
 To drop packets from blocked IPs using system-level firewall:
 ```bash
 sudo iptables -A INPUT -s 192.168.1.100 -j DROP
@@ -137,7 +137,7 @@ sudo iptables -A INPUT -s 192.168.1.100 -j DROP
 
 ---
 
-## 🖥 Optional: Enforce Rules with iptables
+##  Optional: Enforce Rules with iptables
 ```bash
 sudo iptables -A INPUT -s 192.168.1.100 -j DROP
 ```
@@ -149,7 +149,7 @@ os.system("sudo iptables -A INPUT -s 192.168.1.100 -j DROP")
 
 ---
 
-## 📄 Conclusion
+##  Conclusion
 This project provides hands-on experience in building a personal firewall using Python. By leveraging Scapy for packet sniffing and rule enforcement, users learn about network protocols, real-time monitoring, and packet-level filtering. It can be expanded with anomaly detection, machine learning, or deeper OS-level integrations for advanced use cases.
 
 ---
