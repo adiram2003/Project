@@ -84,6 +84,10 @@ sniff(prn=packet_callback, store=False)
 
 
 ```
+<img width="1916" height="930" alt="Screenshot 2025-07-27 150109" src="https://github.com/user-attachments/assets/17992e09-5db0-473b-a578-c30ef9c05f07" />
+<img width="1919" height="937" alt="Screenshot 2025-07-27 150133" src="https://github.com/user-attachments/assets/cbbc7b01-e4f4-41a4-82a1-1ec330800786" />
+
+
 
 ### 3. Customize Rules
 Edit the following variables in `firewall.py` to define custom filtering rules:
